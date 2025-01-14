@@ -1,10 +1,10 @@
-package jm.task.core.jdbc.dao;
+package service;
 
-import jm.task.core.jdbc.model.User;
+import model.User;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserService {
     void createUsersTable();
 
     void dropUsersTable();
