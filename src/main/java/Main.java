@@ -1,8 +1,8 @@
-import dao.UserDaoJDBCImpl;
+import dao.UserDaoHibernateImpl;
 
 public class Main {
     public static void main(String[] args) {
-        UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
+        UserDaoHibernateImpl userDao = new UserDaoHibernateImpl();
 
         userDao.createUsersTable();
 
@@ -13,8 +13,9 @@ public class Main {
 
         userDao.getAllUsers();
 
-//        userDao.cleanUsersTable();
-//
-//        userDao.dropUsersTable();
+        userDao.cleanUsersTable();
+
+        userDao.dropUsersTable();
+
     }
 }
